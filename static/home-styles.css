@@ -1,0 +1,19 @@
+body {
+    font: "Segoe UI", Arial, sans-serif;
+    padding: 0px;
+    background-color: #f4f3f3;
+    text-align: center;
+}
+
+h3 {
+    color: #2196F3!important;
+    text-decoration: underline;
+}
+
+.message {
+    font-weight: 700;
+}
+
+.message-area {
+    border-radius: 6px;
+}

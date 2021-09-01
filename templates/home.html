@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/home-styles.css">
+</head>
+
+<body>
+    <h3>This is a Spam Messages Predictor</h3>
+
+    <div>
+        <form action="{{ url_for('predict')}}" method="POST">
+            <p class="message">Enter Your Message Here</p>
+            <textarea name="message" rows="8" cols="50" class="message-area"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Predict" />
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="../static/result-styles.css" />
+</head>
+
+<body>
+    <h3>Spam Messages Predictor</h3>
+    <p class="result-text">Result</h4>
+        {% if prediction == 1%}
+        <p class="spam">Spam</h3>
+            {% elif prediction == 0%}
+            <p class="not-spam">Not a Spam (It's a Ham lol)</h3>
+                {% endif %}
+</body>
+
+</html>

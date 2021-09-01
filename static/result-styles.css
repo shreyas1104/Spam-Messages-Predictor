@@ -1,0 +1,27 @@
+body {
+    font: "Segoe UI", Arial, sans-serif;
+    padding: 0px;
+    background-color: #f4f3f3;
+    text-align: center;
+}
+
+h3 {
+    color: #2196F3!important;
+    text-decoration: underline;
+}
+
+.result-text {
+    font-weight: 700;
+}
+
+.spam {
+    font-size: x-large;
+    font-weight: 700;
+    color: crimson;
+}
+
+.not-spam {
+    font-size: x-large;
+    font-weight: 700;
+    color: forestgreen;
+}
