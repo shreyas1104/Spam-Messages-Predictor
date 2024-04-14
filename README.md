@@ -7,6 +7,8 @@ A simple web application for classifying text messages as spam or ham (not spam)
 - [Setup](#setup)
 - [Usage](#usage)
 - [Flask Application](#flask-application)
+  - [Functionality](#functionality)
+  - [Routes](#routes)
 - [Templates](#templates)
 
 ## Setup
@@ -24,11 +26,6 @@ A simple web application for classifying text messages as spam or ham (not spam)
 
 The `app.py` file contains the Flask application code for the Spam/Ham Predictor.
 
-### Routes
-
-- `/` (GET): Renders the `home.html` template, which displays the form for entering a text message.
-- `/predict` (POST): Handles the form submission from `home.html`. It processes the submitted text message, makes a prediction using the trained Multinomial Naive Bayes model, and renders the `result.html` template with the prediction result.
-
 ### Functionality
 
 1. The application loads the dataset (`spam.csv`) and performs necessary data preprocessing steps, such as dropping unnecessary columns and mapping the class labels to numerical values.
@@ -39,6 +36,11 @@ The `app.py` file contains the Flask application code for the Spam/Ham Predictor
 6. The submitted message is vectorized using the `CountVectorizer` fitted on the training data.
 7. The trained Multinomial Naive Bayes model predicts whether the submitted message is spam or ham (not spam).
 8. The prediction result is rendered on the `result.html` template and displayed to the user.
+
+### Routes
+
+- `/` (GET): Renders the `home.html` template, which displays the form for entering a text message.
+- `/predict` (POST): Handles the form submission from `home.html`. It processes the submitted text message, makes a prediction using the trained Multinomial Naive Bayes model, and renders the `result.html` template with the prediction result.
 
 ## Templates
 
