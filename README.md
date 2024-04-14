@@ -2,6 +2,13 @@
 
 A simple web application for classifying text messages as spam or ham (not spam) using a Multinomial Naive Bayes model. The app is built with Flask, HTML, and CSS.
 
+## Table of Contents
+
+- [Setup](#setup)
+- [Usage](#usage)
+- [Flask Application](#flask-application)
+- [Templates](#templates)
+
 ## Setup
 
 1. Clone the repository: `git clone https://github.com/shreyas1104/Spam-Messages-Predictor.git`
